@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html id="html">
+  <head>
+    <meta charset="UTF-8">
+    <title>ButtonGPT</title>
+    <style>
+      html, body {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      div {
+        text-align: center;
+      }
+      
+      input[type="text"] {
+        font-family: Arial, sans-serif; 
+        font-size: 16px; 
+        border-radius: 30px; 
+        box-shadow: none; 
+        background-color: white; 
+        border: 2px solid rgb(223, 225, 229); 
+        padding: 10px 10px 10px 20px; 
+        width: 500px; 
+        height: 47px; 
+        font-weight: 400; 
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-family: Arial, sans-serif; 
+        font-size: 18px;
+      }
+      
+      button {
+        width: 400px;
+        height: 60px;
+        font-size: 16px;
+        background-color: rgb(255, 67, 67);
+        color: white;
+        border: none;
+        border-radius: 20px; 
+        font-family:Arial, sans-serif;
+      }
+
+      button:disabled {
+        background-color: #9b0000;
+        color: #ababab
+      }
+    </style>
+  </head>
+  <body onload="onReload()">
+    <div>
+      <h2>What does the button do?</h2>
+      <input type="text" id="inputbox" placeholder="makes the background blue">
+      <br>
+      <button id="myButton">Click Me!</button>
+    </div>
+  </body>
+  <script src="./buttonGPT.js"></script>
+  <script src="./buttonBehavior.js"></script>
+</html>
